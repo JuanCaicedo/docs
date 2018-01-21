@@ -3,7 +3,7 @@ import withDoc, { components } from '../../../lib/with-doc'
 
 import { leo, rauchg } from '../../../lib/data/team'
 import Now from '../../../components/now/now'
-import { InternalLink } from '../../../components/text/link'
+import { InternalLink, GenericLink } from '../../../components/text/link'
 import { Code, InlineCode } from '../../../components/text/code'
 import { TerminalInput } from '../../../components/text/terminal'
 import { Table, Row, Column } from '../../../components/table'
@@ -51,6 +51,12 @@ ${
         {' '}
         and a new deployment will be created. After that, you'll instantly receive its
         URL so that you can share it with other people around the globe.
+        <br/>
+        <i><b>Note</b>: if you are using a {<GenericLink href='https://zeit.co/blog/now-json'>now.json</GenericLink>} file, it should be located inside the
+        {' '}
+        <InlineCode>[path]</InlineCode>
+        {' '}
+        directory.</i>
       </Column>
     </Row>
 
