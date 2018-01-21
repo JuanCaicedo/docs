@@ -62,6 +62,15 @@ ${
 
     <Row>
       <Column>
+        <InlineCode noWrap>now [path]</InlineCode>
+      </Column>
+      <Column>
+        Shorthand for <InlineCode noWrap>now deploy [path]</InlineCode>.
+      </Column>
+    </Row>
+
+    <Row>
+      <Column>
         <InlineCode noWrap>now ls|list [app]</InlineCode>
       </Column>
       <Column>
